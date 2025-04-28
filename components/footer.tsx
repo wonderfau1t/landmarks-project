@@ -5,13 +5,15 @@ export default function Footer() {
   return (
     <footer className="w-full bg-gray-100 py-8 mt-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2">
+        <div className="grid md:grid-cols-3">
           <div>
             <h3 className="text-lg font-bold mb-4 text-primary">{siteConfig.name}</h3>
             <p className="text-gray-600">
             Откройте для себя богатую историю и культурное значение замечательных достопримечательностей. Познакомьтесь с их историей и наследием, которое они хранят.
             </p>
           </div>
+
+          <div></div>
 
           <div>
             <h3 className="text-lg font-bold mb-4 text-primary">Ссылки</h3>

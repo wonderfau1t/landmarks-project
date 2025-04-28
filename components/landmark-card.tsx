@@ -86,7 +86,7 @@ export function LandmarkCard({ landmark, variant = "default" }: LandmarkCardProp
               href={`/landmark/${landmark.id}`}
               className="text-primary font-medium hover:underline inline-flex items-center"
             >
-              View Details
+              Больше
               <svg
                 className="w-4 h-4 ml-1"
                 fill="none"

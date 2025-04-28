@@ -26,10 +26,9 @@ export default function TeamPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-12 text-center max-w-3xl mx-auto">
-        <h1 className="text-3xl font-bold mb-4 text-gray-900">Our Team</h1>
+        <h1 className="text-3xl font-bold mb-4 text-gray-900">Команда</h1>
         <p className="text-gray-600">
-          Meet the dedicated professionals behind our historical landmarks project. Our diverse team brings together
-          expertise in history, technology, design, and community engagement.
+          Наша разнообразная команда объединяет опыт в области истории, технологий, дизайна и вовлечения общественности.
         </p>
       </div>
 

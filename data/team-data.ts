@@ -24,7 +24,7 @@ export const teamMembersData: TeamMember[] = [
     name: "Батаева Ева",
     role: "Системный аналитик",
     bio: "Системный аналитик продумывает архитектуру платформы, чтобы игровые сценарии и маршруты были логичными, увлекательными и доступными для всех путешественников по Томску.",
-    image: "/placeholder.svg?height=400&width=400&text=Alex+Johnson",
+    image: "/team/eva.jpg?height=400&width=400&text=Alex+Johnson",
     // email: "alex@example.com",
     // socialLinks: {
     //   linkedin: "https://linkedin.com/in/alexjohnson",
@@ -38,7 +38,7 @@ export const teamMembersData: TeamMember[] = [
     name: "Таюрская Валерия",
     role: "Контент-мейкер",
     bio: "Контент-мейкер исследует архивы и легенды Томска, преврящая их в увлекательные истории и сценарии, которые оживают в наших игровых маршрутах.",
-    image: "/placeholder.svg?height=400&width=400&text=Alex+Johnson",
+    image: "/team/lera.jpg?height=400&width=400&text=Alex+Johnson",
     // email: "alex@example.com",
     // socialLinks: {
     //   linkedin: "https://linkedin.com/in/alexjohnson",
@@ -52,7 +52,7 @@ export const teamMembersData: TeamMember[] = [
     name: "Итигечев Дмитрий",
     role: "Разработчик",
     bio: "Разработчик воплощает идеи в интерактивный опыт, создавая платформу, где игровые сценарии и маршруты становятся живым путешествием по истории города.",
-    image: "/placeholder.svg?height=400&width=400&text=Alex+Johnson",
+    image: "/team/dima.jpg?height=400&width=400&text=Alex+Johnson",
     // email: "alex@example.com",
     // socialLinks: {
     //   linkedin: "https://linkedin.com/in/alexjohnson",

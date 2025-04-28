@@ -72,7 +72,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
             className="inline-flex items-center text-primary hover:underline mb-6"
           >
             <ChevronLeft className="h-4 w-4 mr-1" />
-            Back to {landmark.name}
+            {landmark.name}
           </Link>
 
           <div className="max-w-4xl mx-auto">
@@ -127,20 +127,20 @@ export default function ArticlePage({ params }: ArticlePageProps) {
 
             <div className="flex justify-between items-center mt-4">
               <p className="text-sm text-gray-500 italic">
-                {landmark.name} - Historical photograph showcasing the architectural details
+                {landmark.name}
               </p>
 
-              <div className="flex space-x-3">
-                <button className="text-gray-500 hover:text-primary transition-colors" aria-label="Share article">
-                  <Share2 className="h-5 w-5" />
-                </button>
-                <button className="text-gray-500 hover:text-primary transition-colors" aria-label="Bookmark article">
-                  <Bookmark className="h-5 w-5" />
-                </button>
-                <button className="text-gray-500 hover:text-primary transition-colors" aria-label="Like article">
-                  <ThumbsUp className="h-5 w-5" />
-                </button>
-              </div>
+              {/*<div className="flex space-x-3">*/}
+              {/*  <button className="text-gray-500 hover:text-primary transition-colors" aria-label="Share article">*/}
+              {/*    <Share2 className="h-5 w-5" />*/}
+              {/*  </button>*/}
+              {/*  <button className="text-gray-500 hover:text-primary transition-colors" aria-label="Bookmark article">*/}
+              {/*    <Bookmark className="h-5 w-5" />*/}
+              {/*  </button>*/}
+              {/*  <button className="text-gray-500 hover:text-primary transition-colors" aria-label="Like article">*/}
+              {/*    <ThumbsUp className="h-5 w-5" />*/}
+              {/*  </button>*/}
+              {/*</div>*/}
             </div>
           </div>
         </div>
@@ -152,19 +152,19 @@ export default function ArticlePage({ params }: ArticlePageProps) {
           {/* Sidebar - Table of Contents */}
           <aside className="lg:col-span-3 order-2 lg:order-1">
             <div className="sticky top-20">
-              <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-                <h2 className="text-lg font-bold mb-4 text-gray-900">Table of Contents</h2>
-                <TableOfContents articleContent={article.content} />
-              </div>
+              {/*<div className="bg-white rounded-lg shadow-sm p-6 mb-6">*/}
+              {/*  <h2 className="text-lg font-bold mb-4 text-gray-900">Table of Contents</h2>*/}
+              {/*  <TableOfContents articleContent={article.content} />*/}
+              {/*</div>*/}
 
               <div className="bg-white rounded-lg shadow-sm p-6">
-                <h2 className="text-lg font-bold mb-4 text-gray-900">About {landmark.name}</h2>
+                <h2 className="text-lg font-bold mb-4 text-gray-900">О {landmark.name}</h2>
                 <p className="text-gray-700 mb-4 text-sm">{landmark.description}</p>
                 <Link
                   href={`/landmark/${landmark.id}`}
                   className="text-primary font-medium hover:underline text-sm inline-flex items-center"
                 >
-                  View Landmark
+                  К точке интереса
                   <ChevronLeft className="h-4 w-4 ml-1 rotate-180" />
                 </Link>
               </div>
@@ -176,25 +176,41 @@ export default function ArticlePage({ params }: ArticlePageProps) {
             <article className="bg-white rounded-lg shadow-sm p-6 md:p-8 lg:p-10">
               <ArticleContent content={article.content} landmarks={landmarksMap} />
 
+              {/* Sources Section */}
+              {article.sources && article.sources.length > 0 && (
+                <div className="mt-10 pt-6 border-t">
+                  <h2 className="text-xl font-semibold mb-4">Источники</h2>
+                  <ul className="space-y-2 text-gray-600 list-disc pl-5">
+                    {article.sources.map((source, index) => (
+                      <li key={index} className="text-sm">
+                        {source}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               {/* Article Footer */}
               <div className="border-t mt-10 pt-6">
-                <div className="flex flex-wrap justify-between items-center gap-4">
-                  <div className="flex items-center gap-2">
-                    <button className="inline-flex items-center gap-1 text-gray-600 hover:text-primary transition-colors">
-                      <ThumbsUp className="h-5 w-5" />
-                      <span>Like</span>
-                    </button>
-                    <button className="inline-flex items-center gap-1 text-gray-600 hover:text-primary transition-colors">
-                      <Share2 className="h-5 w-5" />
-                      <span>Share</span>
-                    </button>
-                  </div>
+                <div className="flex flex-wrap justify-between items-end gap-4">
+                  {/*<div className="flex items-center gap-2">*/}
+                  {/*  <button className="inline-flex items-center gap-1 text-gray-600 hover:text-primary transition-colors">*/}
+                  {/*    <ThumbsUp className="h-5 w-5" />*/}
+                  {/*    <span>Like</span>*/}
+                  {/*  </button>*/}
+                  {/*  <button className="inline-flex items-center gap-1 text-gray-600 hover:text-primary transition-colors">*/}
+                  {/*    <Share2 className="h-5 w-5" />*/}
+                  {/*    <span>Share</span>*/}
+                  {/*  </button>*/}
+                  {/*</div>*/}
+
+                  <div></div>
 
                   <Link
                     href={`/landmark/${landmark.id}`}
                     className="text-primary font-medium hover:underline inline-flex items-center"
                   >
-                    Back to {landmark.name}
+                    {landmark.name}
                     <ChevronLeft className="h-4 w-4 ml-1 rotate-180" />
                   </Link>
                 </div>
@@ -204,7 +220,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
             {/* Related Articles */}
             {relatedArticles.length > 0 && (
               <div className="mt-8">
-                <h2 className="text-2xl font-bold mb-6 text-gray-900">Related Articles</h2>
+                <h2 className="text-2xl font-bold mb-6 text-gray-900">Связанные статьи</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {relatedArticles.map((relatedArticle) => (
                     <ArticleCard

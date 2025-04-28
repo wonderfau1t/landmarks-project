@@ -15,9 +15,9 @@ export default function ArticlesPage() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold mb-2 text-gray-900">Articles</h1>
+        <h1 className="text-3xl font-bold mb-2 text-gray-900">Статьи</h1>
         <p className="text-gray-600">
-          Explore our collection of articles about historical landmarks and cultural heritage.
+            Ознакомьтесь с нашей коллекцией статей об исторических достопримечательностях и культурном наследии.
         </p>
       </div>
 

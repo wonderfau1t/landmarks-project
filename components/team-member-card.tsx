@@ -66,7 +66,7 @@ export function TeamMemberCard({ member, variant = "default" }: TeamMemberCardPr
       <Card className="overflow-hidden transition-all hover:shadow-md">
         <div className="flex items-center p-4">
           <div className="relative h-16 w-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
-            <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+            <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover rounded-full" />
           </div>
           <div>
             <h3 className="font-bold text-lg">{member.name}</h3>
@@ -84,8 +84,14 @@ export function TeamMemberCard({ member, variant = "default" }: TeamMemberCardPr
 
   return (
     <Card className="overflow-hidden transition-all hover:shadow-md h-full flex flex-col">
-      <div className="relative h-64 w-full">
-        <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
+      <div className="relative h-96 w-full overflow-hidden">
+        <Image 
+          src={member.image || "/placeholder.svg"} 
+          alt={member.name} 
+          fill 
+          className="object-cover hover:scale-105 transition-transform duration-300"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </div>
       <CardHeader className="p-4 pb-0">
         <h3 className="font-bold text-xl text-primary">{member.name}</h3>

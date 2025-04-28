@@ -5,7 +5,7 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-8">О проекте</h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
+      <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center mb-12">
         <div>
           <p className="text-lg mb-4">
             Наш проект — это платформа, которая позволяет исследовать Томск
@@ -24,9 +24,9 @@ export default function AboutPage() {
           </p>
         </div>
 
-        <div className="relative h-[400px] rounded-lg overflow-hidden">
-          <Image src="/images/water-tower.png" alt="Historical landmark" fill className="object-cover" />
-        </div>
+        {/*<div className="relative h-[400px] rounded-lg overflow-hidden">*/}
+        {/*  <Image src="/images/water-tower.png" alt="Historical landmark" fill className="object-cover" />*/}
+        {/*</div>*/}
       </div>
 
       <div className="bg-gray-50 p-8 rounded-lg border">
