@@ -86,79 +86,79 @@ export default function LandmarkPage({ params }: LandmarkPageProps) {
             )}
           </div>
 
-          <div className="space-y-6">
-            {/* Info Card */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <h3 className="text-lg font-bold mb-4 text-gray-900">Visitor Information</h3>
+          {/*<div className="space-y-6">*/}
+          {/*  /!* Info Card *!/*/}
+          {/*  <div className="bg-white rounded-lg shadow-sm p-6">*/}
+          {/*    <h3 className="text-lg font-bold mb-4 text-gray-900">Visitor Information</h3>*/}
 
-              {landmark.location && (
-                <div className="flex items-start mb-4">
-                  <MapPin className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-medium text-gray-900">Location</h4>
-                    <p className="text-gray-600">{landmark.location.address}</p>
-                  </div>
-                </div>
-              )}
+          {/*    {landmark.location && (*/}
+          {/*      <div className="flex items-start mb-4">*/}
+          {/*        <MapPin className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />*/}
+          {/*        <div>*/}
+          {/*          <h4 className="font-medium text-gray-900">Location</h4>*/}
+          {/*          <p className="text-gray-600">{landmark.location.address}</p>*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    )}*/}
 
-              {landmark.openingHours && (
-                <div className="flex items-start mb-4">
-                  <Clock className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-medium text-gray-900">Opening Hours</h4>
-                    <p className="text-gray-600">{landmark.openingHours}</p>
-                  </div>
-                </div>
-              )}
+          {/*    {landmark.openingHours && (*/}
+          {/*      <div className="flex items-start mb-4">*/}
+          {/*        <Clock className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />*/}
+          {/*        <div>*/}
+          {/*          <h4 className="font-medium text-gray-900">Opening Hours</h4>*/}
+          {/*          <p className="text-gray-600">{landmark.openingHours}</p>*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    )}*/}
 
-              <div className="flex items-start">
-                <Calendar className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />
-                <div>
-                  <h4 className="font-medium text-gray-900">Best Time to Visit</h4>
-                  <p className="text-gray-600">Spring and early autumn offer the most pleasant weather for visiting.</p>
-                </div>
-              </div>
-            </div>
+          {/*    <div className="flex items-start">*/}
+          {/*      <Calendar className="h-5 w-5 text-primary mt-0.5 mr-3 flex-shrink-0" />*/}
+          {/*      <div>*/}
+          {/*        <h4 className="font-medium text-gray-900">Best Time to Visit</h4>*/}
+          {/*        <p className="text-gray-600">Spring and early autumn offer the most pleasant weather for visiting.</p>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
 
-            {/* Map Card */}
-            <div className="bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="relative h-[250px] w-full">
-                <Image
-                  src="/placeholder.svg?height=250&width=400&text=Location+Map"
-                  alt="Location map"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="p-2 bg-primary text-white rounded-full">
-                    <MapPin className="h-6 w-6" />
-                  </div>
-                </div>
-              </div>
-              <div className="p-4">
-                <Link
-                  href="#"
-                  className="text-primary font-medium hover:underline inline-flex items-center justify-center w-full"
-                >
-                  Get Directions
-                  <svg
-                    className="w-4 h-4 ml-1"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
+          {/*  /!* Map Card *!/*/}
+          {/*  <div className="bg-white rounded-lg shadow-sm overflow-hidden">*/}
+          {/*    <div className="relative h-[250px] w-full">*/}
+          {/*      <Image*/}
+          {/*        src="/placeholder.svg?height=250&width=400&text=Location+Map"*/}
+          {/*        alt="Location map"*/}
+          {/*        fill*/}
+          {/*        className="object-cover"*/}
+          {/*      />*/}
+          {/*      <div className="absolute inset-0 flex items-center justify-center">*/}
+          {/*        <div className="p-2 bg-primary text-white rounded-full">*/}
+          {/*          <MapPin className="h-6 w-6" />*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*    <div className="p-4">*/}
+          {/*      <Link*/}
+          {/*        href="#"*/}
+          {/*        className="text-primary font-medium hover:underline inline-flex items-center justify-center w-full"*/}
+          {/*      >*/}
+          {/*        Get Directions*/}
+          {/*        <svg*/}
+          {/*          className="w-4 h-4 ml-1"*/}
+          {/*          fill="none"*/}
+          {/*          stroke="currentColor"*/}
+          {/*          viewBox="0 0 24 24"*/}
+          {/*          xmlns="http://www.w3.org/2000/svg"*/}
+          {/*        >*/}
+          {/*          <path*/}
+          {/*            strokeLinecap="round"*/}
+          {/*            strokeLinejoin="round"*/}
+          {/*            strokeWidth={2}*/}
+          {/*            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"*/}
+          {/*          />*/}
+          {/*        </svg>*/}
+          {/*      </Link>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
       </div>
     </div>
